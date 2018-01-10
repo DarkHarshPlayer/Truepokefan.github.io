@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    background: url("NYC.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container{
+    position: absolute;
+    top: 15%;
+    left: 29%;
+    margin-top: -20px;
+    margin-left: 20px;
+    padding: 20px;
+    align-content: center;
+    border-radius: 5%;
+    border: 1px solid rgba(255,255,255,0.4) ;
+    width: 450px;
+    height: 500px;
+    background: -webkit-linear-gradient(left,rgba(210,210,210,0.5),rgba(210,210,210,0.5),rgba(210,210,210,0.7),rgba(210,210,210,0.5),rgba(210,210,210,0.3),rgba(210,210,210,0.3));
+}
+.input{
+    background: rgba(255,255,255,1);
+    border: none;
+    color: black;
+    padding: 5px;
+    border-bottom:1px solid white;
+    width: 65%;
+}
+.avatar{
+    margin-top: -95px;
+}
+h2{
+ font-family: myf;
+    color: rgb(10,10,10);
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+@font-face {
+    font-family: myf;
+    src: url("Adequate-ExtraLight.ttf");
+}
+.submit{
+    padding: 8px;
+    border: none;
+    background-color: aqua;
+    color: red;
+    height: 70px;
+    width: 100px;
+    font-size: 30px;
+}
+h6{
+    float: right;
+    color: red;
+}
