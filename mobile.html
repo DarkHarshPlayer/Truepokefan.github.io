@@ -2,6 +2,9 @@
 <html>
 <head>
 <title>No mobile device allowed</title>
+<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
 </head>
 <style>
 body{
@@ -20,6 +23,15 @@ body{
 	font-size: 50%;
 	color: red;
 }
+    #log{
+        visibility: hidden;
+        position: fixed;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        background: -webkit-linear-gradient(320deg,cyan,cyan,red);
+    }
 </style>
 <body>
 <div id="cont">
@@ -29,11 +41,34 @@ body{
 <h1>Sorry, but you need to be on a pc to access this website.</h1>
 <h2>The mobile version of this website will be here very soon.</h2><br>
 <h3>Don't give up be a true pokefan </h3>
-	
-<br><audio src="poke.mp3" controls loop autoplay><br><h1>Created By Harsh</h1>
-	
-	
+    <br><audio src="poke.mp3" controls loop autoplay></audio>
+    <br>
+    <button onclick="vi();">VIP</button>
+    <div id="log" >
+        <center><br><br><br><br><br><br><br>
+            <h1>Please Input Your VIP Id AND Password</h1><br><br>
+            <input type="text" id="id1" placeholder="User ID"><br><br><br>
+            <input type="password" id="pass1" placeholder="Password"><br><br><br>
+            <button onclick="submitu();" >Enter</button>
+        </center>
+    </div>
+    <br><h1>Created By Harsh</h1>
 </center>
 </div>
 </body>
+<script>
+    function vi() {
+        document.getElementById("log").style.visibility = "visible";
+    }
+    function submitu() {
+        var id1 = document.getElementById("id1").value;
+        var pass1 = document.getElementById("pass1").value;
+        if(id1=="harsh" && pass1=="enter_1"){
+            window.location = "wellcome.html"
+        }
+        else{
+            alert("Wrong password or User-Id")
+        }
+    }
+</script>
 </html>
