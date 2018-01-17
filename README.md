@@ -1,2 +1,2 @@
-# mypokeworld.github.io
+# truepokefan.github.io
 my pokemon website
